@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="nl-BE">
+<head>
+    <!-- Required meta tags -->
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>oefening</title>
+    <!-- Bootstrap CSS -->
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <!-- JavaScript: Bootstrap Bundle with Popper -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer>
+    </script>
+    <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
+    <link rel="stylesheet" href="css/style.css">
+     <!-- voeg het leaflet css-bestand toe om de kaart van standaard opmaak te voorzien -->
+     <link rel="stylesheet" href="https://unpkg.com/leaflet@1.9.3/dist/leaflet.css"
+     integrity="sha256-kLaT2GOSpHechhsozzB+flnD+zUyjE2LlfWPgU04xyI=" crossorigin="" />
+   <!-- voeg het mapStyle.css bestand toe. Hierin zetten we alle css specifiek voor de kaart -->
+   <link rel="stylesheet" href="./css/mapStyle.css">
+   <!-- voeg de leaflet.js javascript toe aan de pagina en check de integriteit ervan -->
+   <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
+     integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
+   <!-- voeg het mapScript.js script toe aan de pagina en laad het als de pagina geladen is. -->
+   <script src="./js/mapScript.js" defer></script>
+</head>
+<body>
+  <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top" >
+   <a class="navbar-brand" href="index.html"><img src="img/LOGO.png" width="150" alt=""></a>
+     
+
+   <button 
+   class="navbar-toggler" 
+   type="button"
+   data-bs-toggle="collapse" 
+   data-bs-target="#navmenu" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+   <span class="navbar-toggler-icon"></span>
+   </button>
+  
+   <div class="collapse navbar-collapse n" id="navmenu">
+     <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+       <li class="nav-item">
+         <a class="nav-link active" aria-current="page" href="index.html">Home</a>
+       </li>
+       <li class="nav-item">
+         <a class="nav-link" href="contact.html">contact</a>
+       </li>
+       <li class="nav-item dropdown">
+         <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
+           topics
+         </a>
+         <ul class="dropdown-menu">
+           <li><a class="dropdown-item" href="kort-geschiedenis.html">kort geschiedenis</a></li>
+           <li><a class="dropdown-item" href="Waarom-domotica.html">Waarom Domotica?</a></li>
+           <li><a class="dropdown-item" href="Nadelen-van-domotica.html">Nadelen van domotica</a></li>
+           <li><a class="dropdown-item" href="Domotica-systemen.html">Domotica systemen</a></li>
+           <li><a class="dropdown-item" href="Toepassingen.html">Toepassingen</a></li>
+           <li><a class="dropdown-item" href="prijs.html">Prijs</a></li>
+           <li><hr class="dropdown-divider"></li>
+           <li><a class="dropdown-item" href="overzicht.html">overzicht topics</a></li>
+         </ul>
+     </ul>
+     <form class="d-flex" role="search">
+      <label for="exampleDataList" class="form-label"></label>
+<input class="form-control me-2" list="datalistOptions" id="exampleDataList" placeholder="zoeken" onchange="location = this.value;">
+<datalist id="datalistOptions">
+<option value="index.html">Home</option>>
+<option value="contact.html">Contact</option>
+<option value="overzicht.html">Topics</option>
+<option value="kort-geschiedenis.html">Kort geschiedenis</option>
+<option value="Waarom-domotica.html">Waarom-domotica?</option>
+<option value="Nadelen-van-domotica.html">Nadelen</option>
+<option value="Domotica-systemen.html">Domotica-systemen</option>
+<option value="Toepassingen.html">Toepassingen</option>
+<option value="prijs.html">Prijs</option>
+</datalist>
+      <button class="btn btn-outline-light me-2" type="submit">zoeken</button>
+      </form>
+       <p><a href="login.html" class="btn btn-outline-light mt-3 me-2">login</a></p>
+   </div>
+     </div>
+   </div>
+  </nav>
+
+ <!--main-->
+<main>
+  <div class="container">
+    <div class="row">
+      <main class="col-md-9">
+        <section id="contact" class="row">
+          <article class="col-12 mb-3">
+          </article>
+
+          <form action="#" method="post">
+            <fieldset class="row g-3 mb-3 mt-3">
+              <legend class="text-uppercase fs-6 fw-bolder pt-3 text-light ">gegevens</legend>
+              <div class="col-md-6">
+                <label for="firstName" class="form-label text-light">voornaam <span></span></label>
+                <input type="text" class="form-control" id="firstName" required>
+              </div>
+              <div class="col-md-6">
+                <label for="lastName" class="form-label text-light">achternaam <span></span></label>
+                <input type="text" class="form-control" id="lastName" required>
+              </div>
+              <div class="col">
+                <label for="mobile" class="form-label text-light">mobiel</label>
+                <input type="tel" class="form-control" id="mobile"
+                  placeholder="0412 34 56 78">
+              </div>
+              <div class="col">
+                <label for="birthDate" class="form-label text-light">geboortedatum</label>
+                <input type="date" class="form-control" id="birthDate">
+              </div>
+            </fieldset>
+            
+            <fieldset class="row g-3 mb-3 mt-3">
+                <legend class="text-uppercase fs-6 fw-bolder pt-3 text-light">accountgegevens</legend>
+                <div class="col-12">
+                    <label for="email" class="form-label text-light ">e-mail<span>*</span></label>
+                    <input type="email" class="form-control" id="mail" required>
+                </div>
+                <div class="col-md-6">
+                    <label for="password1" class="from-label text-light">paswoord<span>*</span></label>
+                    <input type="password" class="form-control" id="password1"
+                    placeholder="min 8 karakters, 1 cijfer, 1 hoofdletter" required> 
+                </div>
+                <div class="col-md-6">
+                    <label for="password2" class="from-label text-light">passwoord bevestigen<span>*</span></label>
+                    <input type="password" class="form-control" id="password2"required>
+                </div>
+                <div class="container">
+                <select class="form-select " aria-label="Default select example">
+                  <option selected>Wie wilt u contacteren?</option>
+                  <option value="1">Ons team</option>
+                  <option value="2">Webdesigner</option>
+                </select>
+              </div>                
+            </fieldset>
+
+            <div class="col-12">
+              <button type="submit" class="btn btn-primary">verzenden</button>
+            </div>
+          </form>
+
+        </section>
+        <hr>
+        <section id="map">      
+          <div class="container mt-5 mb-5">
+          <div class="row m-0">
+            <div class="col-md-12 p-0 pb-4">
+          <!-- in de apMap zal er via Leaflet een map ingeladen worden -->
+          <div id="apMap" class="col-md-12 p-0 pb-4"></div>
+            </div>
+          </div>
+        </section>
+</main>
+
+          <aside class="col-md-3 text-light mt-5">
+            <h2 class="text-uppercase fs-4 fw-bolder pt-3 text-light">contact</h2>
+            <p>domotica systemen<br>
+              <a href="mailto:Ahmet.kurtoglu@student.ap.be">Ahmet.kurtoglu@student.ap.be</a><br>
+              phone +32 486 / 31 20 56 <br>Ahmet Kurtoglu</p>
+         
+              <section>
+                <div class="container">
+                  <div class="card text-center">
+                      <div class="card-body">
+                          <img src="img/Image (7).jpeg" alt=""class="img-fluid rounded-circle ahmet">
+                      <h3 class="card-title py-2 text-dark">Ahmet Kurtoglu</h3>
+                      <p class="card-text text-dark">Student IOT (internet of things) op AP met doel als domotica-installateur. heeft middelbaare school afgestudeerd op Don Bosco hoboken richt Residentiële/industriële elektrische installaties.</p>
+        
+                      <p class="socials">
+                          <i class="bi bi-twitter text-dark mx-1"></i>
+                      <i class="bi bi-facebook text-dark mx-1"></i>
+                      <i class="bi bi-linkedin text-dark mx-1"></i>
+                      <i class="bi bi-instagram text-dark mx-1"></i>
+                      </p>
+                      </div>
+                  </div>
+              </div>
+               </section>
+           
+            </aside>
+
+         
+      
+        
+      
+      <footer class="container-fluid text-center h6 small p-4">&copy;Domotica systemen</footer>
+      </body>
+  
+      </html>
