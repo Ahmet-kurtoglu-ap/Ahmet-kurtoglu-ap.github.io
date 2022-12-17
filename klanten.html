@@ -24,10 +24,10 @@
        <script src="https://unpkg.com/leaflet@1.9.3/dist/leaflet.js"
          integrity="sha256-WBkoXOwTeyKclOHuWtc+i2uENFpDZ9YPdf5Hf+D7ewM=" crossorigin=""></script>
        <!-- voeg het mapScript.js script toe aan de pagina en laad het als de pagina geladen is. -->
-       <script src="./js/mapScript.js" defer></script>
+       <script src="./js/klanten.js" defer></script>
   </head>
 <header>
-   <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top" >
+   <nav class="navbar navbar-expand-lg bg-dark navbar-dark" >
    <a class="navbar-brand" href="index.html"><img src="img/LOGO.png" width="150" alt=""></a>
      
 
@@ -91,67 +91,13 @@
  <main>
   <div class="container">
     <div class="row">
-      <main class="col-md-9">
-        <section id="contact" class="row">
-          <article class="col-12 mb-3">
-        
-
-          <form action="#" method="post">
-            <fieldset class="row g-3 mb-3 mt-3">
-              <legend class="text-uppercase fs-6 fw-bolder pt-3 text-light ">gegevens</legend>
-              <article class="col-md-6">
-                <label for="firstName" class="form-label text-light">voornaam <span></span></label>
-                <input type="text" class="form-control" id="firstName" required>
-              </article>
-              <article class="col-md-6">
-                <label for="lastName" class="form-label text-light">achternaam <span></span></label>
-                <input type="text" class="form-control" id="lastName" required>
-              </article>
-              <article class="col-md-6">
-                <label for="mobile" class="form-label text-light">mobiel</label>
-                <input type="tel" class="form-control" id="mobile"
-                  placeholder="0412 34 56 78">
-              </article>
-              <article class="col-md-6">
-                <label for="birthDate" class="form-label text-light">geboortedatum</label>
-                <input type="date" class="form-control" id="birthDate">
-              </article>
-            </fieldset>
-            
-            <fieldset class="row g-3 mb-3 mt-3">
-                <legend class="text-uppercase fs-6 fw-bolder pt-3 text-light">accountgegevens</legend>
-                <article class="col-12">
-                    <label for="email" class="form-label text-light ">e-mail<span>*</span></label>
-                    <input type="email" class="form-control" id="mail" required>
-                </article>
-                <article class="mb-3">
-                  <label for="exampleFormControlTextarea1" class="form-label text-light">Tekstvak</label>
-                  <textarea class="form-control" id="exampleFormControlTextarea1" rows="3"></textarea>
-                </article>
-                <article class="container mt-3">
-                <select class="form-select " aria-label="Default select example">
-                  <option selected>Wie wilt u contacteren?</option>
-                  <option value="1">Ons team</option>
-                  <option value="2">Webdesigner</option>
-                </select>
-                </article>                
-            </fieldset>
-
-            <article class="col-12">
-              <button type="submit" class="btn btn-primary">verzenden</button>
-            </article>
-          </form>
-
+      <main class="col-lg-9">
+        <section id="clients">
         </section>
 
-        <section class="container" id="map">      
-          <article class="mt-5 mb-5 row m-0 col-md-12 p-0 pb-4">
-          <article id="apMap" class="col-md-12 p-0 pb-4"></article>
-          </article>
-        </section>
         </main>
 
-          <aside class="col-md-3 text-light mt-5 fw-bolder">
+          <aside class="col-lg-3 text-light mt-5 fw-bolder">
             <h2 class="text-uppercase fs-4 fw-bolder pt-3 text-light">contact</h2>
             <p>domotica systemen<br>
               <a href="mailto:Ahmet.kurtoglu@student.ap.be">Ahmet.kurtoglu@student.ap.be</a><br>

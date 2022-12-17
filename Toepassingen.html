@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="nl-BE">
-<head>
+  <head>
     <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>oefening</title>
+    <title>home</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
     <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!-- JavaScript: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer></script>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-   <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top" >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- eigen geschreven css voor jouw html-bestand -->
+    <link href="./css/style.css" rel="stylesheet">
+  </head>
+  <header>
+     <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top" >
     <a class="navbar-brand" href="index.html"><img src="img/LOGO.png" width="150" alt=""></a>
       
 
@@ -34,6 +36,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="contact.html">contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="klanten.html">klanten</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -71,44 +76,45 @@
       </div>
     </div>
    </nav>
-
+  </header>
+<body>
+<main>
 <section>
-        <div class="card col-12">
-        <div class="carousel-inner">
-            <div class="carousel-item active">
+        <article class="card col-12">
+        <article class="carousel-inner carousel-item active">
               <img src="img/img21.jpg" class="w-100 " height="600" alt="...">
               <div class="carousel-caption">
                 <h1 class="display-1 align-top text-dark">Aantal toepassingen</h1>
               <p class="text-dark fw-bolder">Domotica biedt oneindig veel mogelijkheden.</p>
-              </div>
-            </div>
+        </article>
+        </article>
 </section>
 
-   <section class="section-padding">
-    <div class="container">
-      <div class="row">
-         <div class="col-12 col-md-12 col-lg-6 mt-3">
-         <div class="card">
-            <h1 class="display-1"> <i class="bi bi-lightbulb text-center" ></i></h1>
-            <h1>verlichting</h1>
-          <div class="card-body">
-            <ul>
+   <section class="container section-padding">
+      <section class="row">
+        <section class="col-12 col-md-12 col-lg-6 mt-3">
+           <article class="card">
+             <h1 class="display-1"> <i class="bi bi-lightbulb text-center" ></i></h1>
+             <h1>verlichting</h1>
+             <article class="card-body">
+              <ul>
                 <li>Meerdere armaturen bundelen in één functie.</li>
                 <li>Verlichting automatisch activeren wanneer u een ruimte binnenkomt.</li>
                 <li>Lichten uit in lege kamers om energie te besparen.</li>
                 <li>Alles-uit functie wanneer u de woning verlaat.</li>
                 <li>Lichtsterkte aanpassen o.b.v. de hoeveelheid daglicht.</li>
                 <li>Sfeervolle fade-in en fade-out.</li>
-            </ul>
-          </div>
-          </div>
-        </div>
+              </ul>
+          </article>
+        </article>
+      </section>
 
-        <div class="col-12 col-md-12 col-lg-6 mt-3">
-            <div class="card">
+
+        <section class="col-12 col-md-12 col-lg-6 mt-3">
+            <article class="card">
                <h1 class="display-1"><i class="bi bi-thermometer-high"></i></h1>
                <h1>klimaat</h1>
-             <div class="card-body">
+             <article class="card-body">
                <ul>
                    <li>In elke ruimte automatisch de juiste temperatuur.</li>
                    <li>Slimme thermostaat die zichzelf optimaliseert.</li>
@@ -117,15 +123,15 @@
                    <li>Toegang tot de verwarming vanop afstand.</li>
                    <li>Meldingen om onderhouden in te plannen.</li>
                </ul>
-             </div>
-             </div>
-           </div>
+             </article>
+            </article>
+        </section>
 
-           <div class="col-12 col-md-12 col-lg-6 mt-3">
-            <div class="card">
+           <section class="col-12 col-md-12 col-lg-6 mt-3">
+            <article class="card">
                <h1 class="display-1"><i class="bi bi-sun-fill"></i></h1>
                <h1>zonwering</h1>
-             <div class="card-body">
+             <article class="card-body">
                <ul>
                    <li>Meerdere rolluiken/screens/gordijnen samen bedienen.</li>
                    <li>Maximaal gebruik maken van gratis zonewarmte.</li>
@@ -134,15 +140,15 @@
                    <li>Zonneschermen automatisch ophalen bij stormweer.</li>
                    <li>Zonwering gebruiken als lichtwekker.</li>
                </ul>
-             </div>
-             </div>
-           </div>
+             </article>
+            </article>
+           </section>
 
-           <div class="col-12 col-md-12 col-lg-6 mt-3">
-            <div class="card">
+           <section class="col-12 col-md-12 col-lg-6 mt-3">
+            <article class="card">
                <h1 class="display-1"><i class="bi bi-shield-fill"></i></h1>
                <h1>veiligheid</h1>
-             <div class="card-body">
+             <article class="card-body">
                <ul>
                    <li>Bewaking van ramen en deuren.</li>
                    <li>Akoestische en optische alarmen bij inbraak.
@@ -153,15 +159,15 @@
                    <li>Toegangscontrole met individuele rechten per gebruiker.</li>
                    <li>Direct op de hoogte via oproep, notificatie of e-mail.</li>
                </ul>
-             </div>
-             </div>
-           </div>
+             </article>
+            </article>
+           </section>
 
-           <div class="col-12 col-md-12 col-lg-6 mt-3">
-            <div class="card">
+           <section class="col-12 col-md-12 col-lg-6 mt-3">
+            <article class="card">
                <h1 class="display-1"><i class="bi bi-music-note-beamed"></i></h1>
                <h1>Multiroom audio</h1>
-             <div class="card-body">
+             <article class="card-body">
                <ul>
                    <li>In elke ruimte dezelfde of andere muziek.
                 </li>
@@ -175,15 +181,15 @@
                 </li>
                    <li>Geluiden voor notificaties (bv. wanneer de garagepoort nog openstaat).</li>
                </ul>
-             </div>
-             </div>
-           </div>
+             </article>
+            </article>
+           </section>
 
-            <article class="col-12 col-md-12 col-lg-6 mt-3">
-             <div class="card">
+            <section class="col-12 col-md-12 col-lg-6 mt-3">
+             <article class="card">
                 <h1 class="display-1"><i class="bi bi-lightning-charge-fill"></i></h1>
                 <h1>Energie</h1>
-            <div class="card-body">
+            <article class="card-body">
                 <ul>
                     <li>Automatisch standby-apparaten uitschakelen.
                     </li>
@@ -197,10 +203,11 @@
                     </li>
                     <li>Energiestatistieken om besparingen te ontdekken.</li>
                 </ul>
-              </div>
-            </div>
             </article>
+             </article>
+            </section>
+      </section>
 </section>
-
-
+</main>
 </body>
+</html>

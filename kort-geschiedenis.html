@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="nl-BE">
-<head>
+  <head>
     <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>oefening</title>
+    <title>home</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
     <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!-- JavaScript: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer></script>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-   <nav class="navbar navbar-expand-lg bg-dark navbar-dark " >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- eigen geschreven css voor jouw html-bestand -->
+    <link href="./css/style.css" rel="stylesheet">
+  </head>
+  <header>
+      <nav class="navbar navbar-expand-lg bg-dark navbar-dark  " >
     <a class="navbar-brand" href="index.html"><img src="img/LOGO.png" width="150" alt=""></a>
       
 
@@ -34,6 +36,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="contact.html">contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="klanten.html">klanten</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -69,54 +74,37 @@
         <p><a href="login.html" class="btn btn-outline-light mt-3 me-2">login</a></p>
     </div>
    </nav>
-
-
-
-
-   <section id="evolutie" class="contact section-padding">
-    <div class="container mt-5 mb-5">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-header text-center pb-5">
-          	<h1>List</h1>
-	    <ul class="list-group bg-dark text-light">
-            <li><a class="list-group-item bg-dark text-light" href="#hoe">Hoe is domotica ontstaan?</a></li>
-            <li><a class="list-group-item bg-dark text-light" href="#eerste">De eerste generatie systemen: alles uitbreken</a></li>
-            <li><a class="list-group-item bg-dark text-light" href="#vandaag">Domotica vandaag: steeds slimmer</a></li>
-          </ul>
-     	</div">
-     </div>
-    </div>
-    </div>
-    </div>
+  </header>
+<body>
+  <main>
+   <section id="evolutie" class="container section-padding">
+    <article class="mt-5 mb-5 row col-md-12 section-header text-center pb-5">
+          	<h1>Lijst</h1>
+	    <dl class="list-group bg-dark text-light">
+            <dt><a class="list-group-item bg-dark text-light" href="#hoe">Hoe is domotica ontstaan?</a></dt>
+            <dt><a class="list-group-item bg-dark text-light" href="#eerste">De eerste generatie systemen: alles uitbreken</a></dt>
+            <dt><a class="list-group-item bg-dark text-light" href="#vandaag">Domotica vandaag: steeds slimmer</a></dt>
+      </dl>
+    </article>
+  </section>
+  
+  <section id="hoe" class="container section-padding text-light">
+    <article class="mt-5 mb-5 row col-md-12 section-header text-start pb-5">
+      <h1>Hoe is domotica ontstaan?</h1>
+        <p> Domotica komt van geautomatiseerde industrie(PLC) en kantoor. De eerste 
+            domotica systeem voor residentieel was voor mensen met een beperking.
+            De bedoeling was eigenlijk dat mensen met een beperking normale huiselijke taken 
+            kunnen uitvoeren. Eind 20ste eeuw met het komen van smartphone is domotice 
+            genormaliseerd.</p>
+            <figure class="figure">
+              <img src="img/img13.jpeg" class="figure-img img-fluid img" alt="">
+                <figcaption class="figure-caption">domotica modules</figcaption>
+            </figure> 
+    </article>
   </section>
 
-              <section id="hoe" class="contact section-padding text-light">
-                <div class="container mt-5 mb-5">
-                    <div class="row">
-                        <div class="col-md-12">
-                            <div class="section-header text-center pb-5 ">
-                             <h1>Hoe is domotica ontstaan?</h1>
-                               <p> Domotica komt van geautomatiseerde industrie(PLC) en kantoor. De eerste 
-                                   domotica systeem voor residentieel was voor mensen met een beperking. De 
-                                   bedoeling was eigenlijk dat mensen met een beperking normale huiselijke taken 
-                                   kunnen uitvoeren. Eind 20ste eeuw met het komen van smartphone is domotice 
-                                   genormaliseerd.</p>
-                                   <figure class="figure">
-                                    <img src="img/img13.jpeg" class="figure-img img-fluid img" alt="">
-                                    <figcaption class="figure-caption">domotica modules</figcaption>
-                                  </figure> 
-                              </div>
-                         </div>
-                     </div>
-                 </div>
-              </section>
-
-   <section id="eerste" class="contact section-padding bg-d text-light">
-    <div class="container mt-5 mb-5">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-header text-center pb-5">
+   <section id="eerste" class="container section-padding bg-d text-light">
+    <article class=" mt-5 mb-5 row col-md-12 section-header text-end pb-5">
                  <h1>De eerste generatie systemen</h1>
                  <p>De eerste generatie domotica systemen hadden redelijk eenvoudige toepassingen, die men veelal niet vanop afstand kon bedienen.
                    Het ging dan bijvoorbeeld om elektrische rolluiken of het licht dat met één centrale knop te bedienen was.
@@ -125,26 +113,19 @@
                     <img src="img/img14.jpg" class="figure-img img-fluid img" alt="">
                     <figcaption class="figure-caption">een druknop</figcaption>
                   </figure> 
-        </div>
-      </div>
-        </div>
-    </div>
+    </article>
    </section>
 
-   <section id="vandaag" class="contact section-padding bg-dark text-light">
-    <div class="container mt-5 mb-5">
-        <div class="row">
-            <div class="col-md-12">
-                <div class="section-header text-center pb-5">
+   <section id="vandaag" class="container section-padding bg-dark text-light">
+    <article class="container mt-5 mb-5 row col-md-12 section-header text-start pb-5">
           <h1>Domotica vandaag: steeds slimmer</h1>
          <p>Domotica systemen worden tegenwoordig standaard aangesloten op het LAN-netwerk, waardoor je je woning vanop eender welk toestel (smartphone, tablet, laptop, …) met een internetverbinding bedient.</p>
         <figure class="figure">
           <img src="img/img15.png" class="figure-img img-fluid img" alt="">
           <figcaption class="figure-caption">slimme domotica</figcaption>
         </figure> 
-        </div>
-      </div>
-        </div>
-    </div>
-   </section>
+    </article>
+   </section> 
+  </main>
 </body>
+</html>

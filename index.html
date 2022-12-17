@@ -1,21 +1,23 @@
 <!DOCTYPE html>
 <html lang="nl-BE">
-<head>
+  <head>
     <!-- Required meta tags -->
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>oefening</title>
+    <title>home</title>
     <!-- Bootstrap CSS -->
-    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-EVSTQN3/azprG1Anm3QDgpJLIm9Nao0Yz1ztcQTwFspd3yD65VohhpuuCOmLASjC" crossorigin="anonymous">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link href="https://getbootstrap.com/docs/5.2/assets/css/docs.css" rel="stylesheet">
     <!-- Bootstrap CSS icons: https://icons.getbootstrap.com/#usage -->
     <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css">
     <!-- JavaScript: Bootstrap Bundle with Popper -->
-    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.0.2/dist/js/bootstrap.bundle.min.js" integrity="sha384-MrcW6ZMFYlzcLA8Nl+NtUVF0sA7MsXsP1UyJoMp4YLEuNSfAP+JcXn/tWtIaxVXM" crossorigin="anonymous" defer></script>
-    <link rel="stylesheet" href="css/style.css">
-</head>
-<body>
-   <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top" >
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.2.2/dist/js/bootstrap.bundle.min.js"></script>
+    <!-- eigen geschreven css voor jouw html-bestand -->
+    <link href="./css/style.css" rel="stylesheet">
+  </head>
+  <header>
+    <nav class="navbar navbar-expand-lg bg-dark navbar-dark fixed-top" >
     <a class="navbar-brand" href="index.html"><img src="img/LOGO.png" width="150" alt=""></a>
       
 
@@ -34,6 +36,9 @@
         </li>
         <li class="nav-item">
           <a class="nav-link" href="contact.html">contact</a>
+        </li>
+        <li class="nav-item">
+          <a class="nav-link" href="klanten.html">klanten</a>
         </li>
         <li class="nav-item dropdown">
           <a class="nav-link dropdown-toggle" href="#" role="button" data-bs-toggle="dropdown" aria-expanded="false">
@@ -71,81 +76,75 @@
       </div>
     </div>
    </nav>
-
+  </header>
+<body>
 <!--main-->
     <main>
-      <section class="bg-dark text-light p-5 text-center">
-       <div class="container mt-5">
-        <div class="d-sm-flex align-items-center justify-content-between">
-          <div>
-            <h1>huis van <span class="text-primary">de toekomst</span></h1>
-            <p class="lead">jouw huis van toekomst met domotica</p>
-          </div>
+      <section class="container bg-dark text-light p-5 text-center">
+       <article class="d-sm-flex align-items-center justify-content-between mt-5">
+          <article>
+            <h1>huis van <span class="text-primary">toekomst</span></h1>
+            <p class="lead">jouw huis van de toekomst met domotica</p>
+          </article>
           <img class="img-fluid w-50 d-none d-sm-block" src="img/img4.jpg" alt="">
-        </div>
-       </div>
+       </article>
       </section>
       <!--card-->
-      <section class="section-padding bg-dark">
-        <div class="container">
-          <div class="row">
-             <div class="col-12 col-md-12 col-lg-4 mb-3">
-             <div class="card te">
-              <img src="img/img2.jpg" class="card-img-top img-fluid img" alt="#">
-              <div class="card-body">
+      <section class="container section-padding bg-dark">
+        <article class="row">
+             <article class="col-12 col-md-12 col-lg-4 mb-3">
+             <article class="card">
+              <img src="img/img2.jpg" class="card-img-top img-fluid " alt="#">
+              <article class="card-body">
                 <h5 class="card-title mb-3">makkelijk</h5>
                 <p class="card-text">jouw huis makkelijk bedienen.
                 <br>&nbsp;
                 </p>
                 <a href="Waarom-domotica.html" class="btn btn-primary">lees meer</a>
-              </div>
-              </div>
-            </div>
+              </article>
+             </article>
+             </article>
            
-            <div class="col-12 col-md-12 col-lg-4 mb-3">
-              <div class="card">
-              <img src="img/img3.jpg" class="card-img-top img-fluid img" alt="...">
-              <div class="card-body">
+            <article class="col-12 col-md-12 col-lg-4 mb-3">
+              <article class="card">
+              <img src="img/img3.jpg" class="card-img-top img-fluid" alt="...">
+              <article class="card-body">
                 <h5 class="card-title mb-3">energie</h5>
                 <p class="card-text">Domotica is energie besparend.<br>&nbsp;</p>
                 <a href="Waarom-domotica.html" class="btn btn-primary">lees meer</a>
-              </div>
-              </div>
-            </div>
+              </article>
+              </article>
+            </article>
           
-            <div class="col-12 col-md-12 col-lg-4 mb-3">
-              <div class="card">  
-              <img src="img/istockphoto-1312912134-612x612.jpg" class="card-img-top img-fluid img" alt="...">
-              <div class="card-body">
+            <article class="col-12 col-md-12 col-lg-4 mb-3">
+              <article class="card">  
+              <img src="img/istockphoto-1312912134-612x612.jpg" class="card-img-top img-fluid"  alt="...">
+              <article class="card-body">
                 <h5 class="card-title mb-3">comfort</h5>
                 <p class="card-text">Met domotica verhoog je je comfort. <br>&nbsp;</p>
                 <a href="Waarom-domotica.html" class="btn btn-primary">lees meer</a>
-              </div>
-            </div>
-            </div>
-          </div>
-        </div>
+              </article>
+              </article>
+            </article>
+        </article>
        </section>
       <!--videos-->
-       <section class="section-padding bg-dark">
-        <div class="container">
-         <div class="row">
-          <div class="col-12 col-md-9 col-lg-6 mb-3 p-4">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/FjUJoY8c9Rw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
+       <section class=" container section-padding bg-dark d-none d-md-block">
+        <article class="row">
+        <article class="container-fluid col-12 col-md-9 col-lg-6 mb-3 p-2 ">
+            <iframe width="100%" height="400px" src="https://www.youtube.com/embed/FjUJoY8c9Rw" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+          
         
-          <div class="col-12 col-md-9 col-lg-6 mb-3 p-4">
-            <iframe width="560" height="315" src="https://www.youtube.com/embed/ujhS2QhxYQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
-          </div>
-          </div>
-        </div>
+        <article class="container-fluid col-12 col-md-9 col-lg-6 mb-3 p-2">
+            <iframe width="100%" height="400px" src="https://www.youtube.com/embed/ujhS2QhxYQE" title="YouTube video player" frameborder="0" allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture" allowfullscreen></iframe>
+        </article>
+       </article>
        </section>
         
-       <section id="instructors" class="p-5 bg-dark">
-        <div class="container">
-        <div class="col-12 col-md-6 col-lg-12">
-          <div class="card text-center">
-              <div class="card-body">
+       <section class="container p-5 bg-dark">
+        <article class="col-12 col-md-6 col-lg-12 card text-center">
+              <article class="card-body">
                   <img src="img/Image (7).jpeg" alt="" width="250" class="img-fluid rounded-circle ahmet">
               <h3 class="card-title py-2">Ahmet Kurtoglu</h3>
               <p class="card-text">Student IOT (internet of things) op AP met doel als domotica-installateur. heeft middelbaare school afgestudeerd op Don Bosco hoboken richt Residentiële/industriële elektrische installaties.
@@ -157,13 +156,12 @@
               <i class="bi bi-linkedin text-dark mx-1"></i>
               <i class="bi bi-instagram text-dark mx-1"></i>
               </p>
-              </div>
-          </div>
-          </div>
-      </div>
+              </article>
+          
+         
+        </article>
        </section>
     </main>
-    <aside></aside>
-    <footer></footer>
+    <footer class="container-fluid text-center h6 small p-4 text-light fixed-botom">&copy;2023 Ahmet Kurtoglu G_1IOT_D1</footer>
 </body>
 </html>
