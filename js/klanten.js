@@ -10,6 +10,12 @@ function random_item(complimenten) {
     return complimenten[Math.floor(Math.random() * complimenten.length)];
 }
 
+const woonplaats = ["Antwerpen", "Limburg", "West-Vlaanderen", "Oost-Vlaanderen", "Vlaams-Brabant", "Brussel", "Waals-Brabant", "Namen", "Henegouwen", "Luik", "Luxemburg"];
+
+function random_item(woonplaats) {
+    return woonplaats[Math.floor(Math.random() * woonplaats.length)];
+}
+
 
 
 // maak connectie met random user generator API en haal 6 users op
@@ -40,7 +46,7 @@ fetch('https://randomuser.me/api/?results=6')
 
 			<div class="card-body ps-3 mb-3">
 			<p class="card-title text-uppercase fs-6 fw-bolder pt-3">${user.name.first} ${user.name.last}</p>
-			<p class="card-text h6 small mt-2">Ik kom uit ${user.location.country} en vind domotica-systemen ${random_item(complimenten)} goed !</p>
+			<p class="card-text h6 small mt-2">Ik kom uit ${random_item(woonplaats)} en vind domotica-systemen ${random_item(complimenten)} goed !</p>
             </div>
       </div>`;
         }
